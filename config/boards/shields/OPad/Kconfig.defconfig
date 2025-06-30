@@ -1,0 +1,6 @@
+if SHIELD_OPAD
+
+config ZMK_KEYBOARD_NAME
+	default "OPad"
+	
+endif
