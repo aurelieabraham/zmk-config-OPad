@@ -1,8 +1,8 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 #define DEFAULT 0
-#define PARAM 1
-#define QWERTY 2
+#define PARAM   1
+#define QWERTY  2
 
 / {
     keymap {
@@ -14,29 +14,29 @@
             // |     A     |     B     |     C     |
             // |     D     |     E     |     F     |
             bindings = <
-                &kp KP_PLUS    &kp KP_MINUS    &kp KP_MUTIPLY    &kp KP_DIVIDE    &lt PARAM C_MUTE
-                &kp KP_N7    &kp KP_N8    &kp KP_N9    &kp KP_CLEAR    &kp BSPC
-                &kp KP_N4    &kp KP_N5    &kp KP_N6    &kp KP_N0    &kp KP_ENTER
-                &kp KP_N1    &kp KP_N2    &kp KP_N3    &kp COMMA
+                &kp KP_PLUS   &kp KP_MINUS   &kp KP_MUTIPLY   &kp KP_DIVIDE   &lt 1 C_MUTE
+                &kp KP_N7     &kp KP_N8      &kp KP_N9        &kp KP_CLEAR    &kp BSPC
+                &kp KP_N4     &kp KP_N5      &kp KP_N6        &kp KP_N0       &kp KP_ENTER
+                &kp KP_N1     &kp KP_N2      &kp KP_N3        &kp COMMA
             >;
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
         
         parameters_layer {
         	bindings = <
-        		&tog_on DEFAULT    &tog_on QWERTY    &none    &none    &none
-        		&none    &none    &none    &none    &none
-        		&none    &none    &none    &none    &bootloader
-        		&bt BT_SEL 0    &bt BT_SEL 1    &bt BT_SEL 2    &bt BT_CLR
+        		&tog_on DEFAULT    &tog_on QWERTY    &none           &none           &none
+        		&none              &none             &none           &none           &none
+        		&none              &none             &none           &none           &bootloader
+        		&bt BT_SEL 0       &bt BT_SEL 1      &bt BT_SEL 2    &bt BT_CLR
         	>;
         };
         
         qwerty_layer {
         	bindings = <
-        		&kp 	N1    &kp N2    &kp N3    &kp N4    &lt PARAM C_MUTE
-        		&kp TAB    &kp Q    &kp W    &kp E    &kp R
-        		&kp LSHIFT    &kp A    &kp S    &kp D    &kp SPACE
-        		&kp LCTRL    &kp Z    &kp X    &kp C
+        		&kp N1      &kp N2   &kp N3   &kp N4   &lt PARAM C_MUTE
+        		&kp TAB     &kp Q    &kp W    &kp E    &kp R
+        		&kp LSHIFT  &kp A    &kp S    &kp D    &kp SPACE
+        		&kp LCTRL   &kp Z    &kp X    &kp C
         	>;
         	sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
